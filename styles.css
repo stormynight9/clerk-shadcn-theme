@@ -3,7 +3,8 @@
 }
 
 .cl-card,
-.cl-socialButtonsBlockButton {
+.cl-socialButtonsBlockButton,
+.cl-alert {
     @apply border border-input bg-background;
 }
 
@@ -32,8 +33,4 @@
 
 .cl-footerActionLink {
     @apply text-accent-foreground underline hover:text-accent-foreground/90;
-}
-
-.cl-alert {
-    @apply border border-input bg-background;
 }
