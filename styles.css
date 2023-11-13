@@ -12,7 +12,7 @@
 .cl-socialButtonsBlockButtonText,
 .cl-loading,
 .cl-formFieldLabel {
-    @apply text-foreground;
+    @apply dark:text-foreground;
 }
 
 .cl-headerSubtitle,
