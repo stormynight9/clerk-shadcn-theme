@@ -10,7 +10,8 @@ Easily synchronize your Clerk Sign-in and Sign-up components with your Shadcn st
 }
 
 .cl-card,
-.cl-socialButtonsBlockButton {
+.cl-socialButtonsBlockButton,
+.cl-alert {
     @apply border border-input bg-background;
 }
 
@@ -41,8 +42,5 @@ Easily synchronize your Clerk Sign-in and Sign-up components with your Shadcn st
     @apply text-accent-foreground underline hover:text-accent-foreground/90;
 }
 
-.cl-alert {
-    @apply border border-input bg-background;
-}
 
 ```
