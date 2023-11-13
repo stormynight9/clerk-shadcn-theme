@@ -19,7 +19,7 @@ Easily synchronize your Clerk Sign-in and Sign-up components with your Shadcn st
 .cl-socialButtonsBlockButtonText,
 .cl-loading,
 .cl-formFieldLabel {
-    @apply text-foreground;
+    @apply dark:text-foreground;
 }
 
 .cl-headerSubtitle,
