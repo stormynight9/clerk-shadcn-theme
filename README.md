@@ -11,14 +11,21 @@ Easily synchronize your Clerk Sign-in and Sign-up components with your Shadcn st
 
 .cl-card,
 .cl-socialButtonsBlockButton,
-.cl-alert {
+.cl-alert,
+.cl-identityPreview,
+.cl-phoneInputBox {
     @apply border border-input bg-background;
 }
 
 .cl-headerTitle,
 .cl-socialButtonsBlockButtonText,
 .cl-loading,
-.cl-formFieldLabel {
+.cl-formFieldLabel,
+.cl-formHeaderTitle,
+.cl-selectButton__countryCode,
+.cl-selectButton__countryCode p,
+.cl-selectOption p,
+.cl-selectOption div {
     @apply dark:text-foreground;
 }
 
@@ -26,7 +33,10 @@ Easily synchronize your Clerk Sign-in and Sign-up components with your Shadcn st
 .cl-dividerText,
 .cl-footerActionText,
 .cl-alertText,
-.cl-formFieldInfoText {
+.cl-formFieldInfoText,
+.cl-formFieldSuccessText,
+.cl-identityPreviewText,
+.cl-formHeaderSubtitle {
     @apply text-muted-foreground;
 }
 
@@ -35,12 +45,31 @@ Easily synchronize your Clerk Sign-in and Sign-up components with your Shadcn st
 }
 
 .cl-formFieldInput {
-    @apply flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+    @apply flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-foreground ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
 }
 
 .cl-footerActionLink {
     @apply text-accent-foreground underline hover:text-accent-foreground/90;
 }
 
+.cl-otpCodeFieldInput {
+    @apply border border-b-input text-foreground;
+}
+
+.cl-formResendCodeLink {
+    @apply text-primary disabled:opacity-90;
+}
+
+.cl-selectSearchInput__countryCode {
+    @apply flex h-10 w-full rounded-md border border-b border-input bg-background text-foreground ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.cl-selectOptionsContainer__countryCode {
+    @apply border border-input bg-background;
+}
+
+.cl-internal-icon {
+    @apply text-foreground;
+}
 
 ```
