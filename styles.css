@@ -6,7 +6,8 @@
 .cl-socialButtonsBlockButton,
 .cl-alert,
 .cl-identityPreview,
-.cl-phoneInputBox {
+.cl-phoneInputBox,
+.cl-userButtonPopoverCard {
     @apply border border-input bg-background;
 }
 
@@ -18,7 +19,14 @@
 .cl-selectButton__countryCode,
 .cl-selectButton__countryCode p,
 .cl-selectOption p,
-.cl-selectOption div {
+.cl-selectOption div,
+.cl-modalCloseButton,
+.cl-navbarButton,
+.cl-breadcrumbsItem.cl-breadcrumbsItem__currentPage,
+.cl-profileSectionTitle p,
+.cl-userPreviewTextContainer,
+.cl-profileSectionContent p,
+.cl-form p {
     @apply dark:text-foreground;
 }
 
@@ -29,7 +37,18 @@
 .cl-formFieldInfoText,
 .cl-formFieldSuccessText,
 .cl-identityPreviewText,
-.cl-formHeaderSubtitle {
+.cl-userButtonPopoverActionButton,
+.cl-userButtonPopoverActionButton svg,
+.cl-userButtonPopoverActionButtonText,
+.cl-userButtonPopoverFooter p,
+.cl-userButtonPopoverFooter a,
+.cl-formHeaderSubtitle,
+.cl-breadcrumbsItem,
+.cl-breadcrumbsItemDivider,
+.cl-fileDropAreaHint,
+.cl-fileDropAreaFooterHint,
+.cl-form
+    p[data-localization-key="userProfile.emailAddressPage.emailCode.formHint"] {
     @apply text-muted-foreground;
 }
 
@@ -37,7 +56,9 @@
     @apply bg-border;
 }
 
-.cl-formFieldInput {
+.cl-formFieldInput[type="text"],
+.cl-formFieldInput[type="email"],
+.cl-formFieldInput[type="password"] {
     @apply flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-foreground ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
 }
 
@@ -63,4 +84,65 @@
 
 .cl-internal-icon {
     @apply text-foreground;
+}
+
+.cl-profileSectionTitle {
+    @apply border-b border-input;
+}
+
+button[data-localization-key="userProfile.start.dangerSection.deleteAccountButton"] {
+    @apply bg-destructive text-destructive-foreground hover:bg-destructive/90;
+}
+
+.cl-avatarImageActionsUpload,
+.cl-fileDropAreaButtonPrimary,
+.cl-formButtonReset,
+.cl-accordionContent
+    button[data-localization-key="userProfile.start.emailAddressesSection.detailsAction__unverified"] {
+    @apply text-blue-600 dark:text-blue-400;
+}
+
+.cl-avatarImageActionsRemove,
+.cl-accordionContent
+    button[data-localization-key="userProfile.start.emailAddressesSection.destructiveAction"] {
+    @apply text-destructive dark:text-red-400;
+}
+
+.cl-fileDropAreaBox {
+    @apply bg-accent;
+}
+
+.cl-fileDropAreaIconBox {
+    @apply dark:bg-slate-700;
+}
+
+/* Hover styling */
+
+.cl-userButtonPopoverActionButton,
+.cl-profileSectionPrimaryButton,
+.cl-accordionTriggerButton,
+.cl-navbarButton {
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    @apply hover:bg-accent hover:text-accent-foreground;
+}
+
+/* Dark mode variable overrides */
+
+.dark {
+    .cl-badge {
+        --bg: #bfdbfe;
+        --accent: #1e3a8a;
+    }
+    .cl-badge[data-localization-key="badge__unverified"] {
+        --bg: #fecaca;
+        --accent: #991b1b;
+    }
+    .cl-userButtonPopoverActionButton,
+    .cl-profileSectionPrimaryButton,
+    .cl-accordionTriggerButton,
+    .cl-navbarButton {
+        --accent: 217.2 32.6% 17.5%;
+        --accent-foreground: 210 40% 98%;
+    }
 }
