@@ -13,7 +13,8 @@ Easily synchronize your Clerk Sign-in and Sign-up components with your Shadcn st
 .cl-socialButtonsBlockButton,
 .cl-alert,
 .cl-identityPreview,
-.cl-phoneInputBox {
+.cl-phoneInputBox,
+.cl-userButtonPopoverCard {
     @apply border border-input bg-background;
 }
 
@@ -25,7 +26,15 @@ Easily synchronize your Clerk Sign-in and Sign-up components with your Shadcn st
 .cl-selectButton__countryCode,
 .cl-selectButton__countryCode p,
 .cl-selectOption p,
-.cl-selectOption div {
+.cl-selectOption div,
+.cl-modalCloseButton,
+.cl-navbarButton,
+.cl-breadcrumbsItem.cl-breadcrumbsItem__currentPage,
+.cl-profileSectionTitle p,
+.cl-userPreviewTextContainer,
+.cl-profileSectionContent p,
+.cl-form p,
+.cl-accordionTriggerButton {
     @apply dark:text-foreground;
 }
 
@@ -36,7 +45,19 @@ Easily synchronize your Clerk Sign-in and Sign-up components with your Shadcn st
 .cl-formFieldInfoText,
 .cl-formFieldSuccessText,
 .cl-identityPreviewText,
-.cl-formHeaderSubtitle {
+.cl-userButtonPopoverActionButton,
+.cl-userButtonPopoverActionButton svg,
+.cl-userButtonPopoverActionButtonText,
+.cl-userButtonPopoverFooter p,
+.cl-userButtonPopoverFooter a,
+.cl-formHeaderSubtitle,
+.cl-breadcrumbsItem,
+.cl-breadcrumbsItemDivider,
+.cl-fileDropAreaHint,
+.cl-fileDropAreaFooterHint,
+.cl-form
+    p[data-localization-key='userProfile.emailAddressPage.emailCode.formHint'],
+p[data-localization-key='userProfile.profilePage.successMessage'] {
     @apply text-muted-foreground;
 }
 
@@ -44,7 +65,9 @@ Easily synchronize your Clerk Sign-in and Sign-up components with your Shadcn st
     @apply bg-border;
 }
 
-.cl-formFieldInput {
+.cl-formFieldInput[type='text'],
+.cl-formFieldInput[type='email'],
+.cl-formFieldInput[type='password'] {
     @apply flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-foreground ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
 }
 
@@ -68,8 +91,65 @@ Easily synchronize your Clerk Sign-in and Sign-up components with your Shadcn st
     @apply border border-input bg-background;
 }
 
-.cl-internal-icon {
+.cl-internal-icon,
+.cl-userPreviewSecondaryIdentifier__userButton {
     @apply text-foreground;
 }
+
+.cl-profileSectionTitle {
+    @apply border-b border-input;
+}
+
+button[data-localization-key='userProfile.start.dangerSection.deleteAccountButton'] {
+    @apply bg-destructive text-destructive-foreground hover:bg-destructive/90;
+}
+
+.cl-fileDropAreaBox {
+    @apply dark:bg-gray-900;
+}
+
+.cl-fileDropAreaIconBox {
+    @apply dark:bg-gray-800;
+}
+
+.cl-fileDropAreaIcon {
+    @apply dark:text-gray-400;
+}
+
+.cl-fileDropAreaButtonPrimary {
+    @apply h-10 px-4 py-2 text-foreground transition-colors hover:bg-secondary hover:text-accent-foreground;
+}
+
+.cl-userButtonPopoverActionButton,
+.cl-profileSectionPrimaryButton,
+.cl-accordionTriggerButton,
+.cl-navbarButton {
+    @apply hover:bg-accent hover:text-accent-foreground;
+}
+
+.cl-card {
+    @apply rounded-lg shadow-md;
+}
+
+.cl-userButtonPopoverCard {
+    @apply rounded-md;
+}
+
+.cl-userButtonPopoverFooter a {
+    @apply hover:text-muted-foreground;
+}
+
+.cl-badge {
+    @apply rounded-full px-2.5 py-0.5 text-xs;
+}
+
+.cl-badge[data-localization-key='badge__unverified'] {
+    @apply border bg-transparent text-destructive dark:text-red-500;
+}
+
+.cl-formButtonReset {
+    @apply text-foreground hover:bg-secondary;
+}
+
 
 ```
