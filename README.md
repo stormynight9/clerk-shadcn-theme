@@ -3,6 +3,13 @@ Easily synchronize your Clerk Sign-in and Sign-up components with your Shadcn st
 
 ![Screenshot_4](https://github.com/stormynight9/clerk-shadcn-theme/assets/81434423/65804b03-cf66-43e0-ab19-9158c6ecf003)
 
+This theme supports:
+* ```<SignIn />```
+* ```<SignUp />```
+* ```<UserButton />```
+* ```<UserProfile />```
+
+
 1. Configure your primary color:
 ```jsx
 <ClerkProvider
