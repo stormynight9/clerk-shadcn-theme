@@ -8,7 +8,7 @@ Easily synchronize your Clerk Sign-in and Sign-up components with your Shadcn st
 <ClerkProvider
     appearance={{
         variables: {
-            colorPrimary: 'hsl(263.4, 70%, 50.4%)', // change this value (you can get it from you're css variables)
+            colorPrimary: 'hsl(263.4, 70%, 50.4%)', // change this value (you can get it from you're css variables, make sure to include 'hsl' and commas)
                 },
             }}
 >
