@@ -8,7 +8,8 @@ This theme supports:
 * ```<SignUp />```
 * ```<UserButton />```
 * ```<UserProfile />```
-
+  
+## Setup
 
 1. Configure your primary color:
 ```jsx
