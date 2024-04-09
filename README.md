@@ -174,3 +174,4 @@ button[data-localization-key='userProfile.start.dangerSection.deleteAccountButto
 
 
 ```
+If you encounter any issues with the theme, please create an issue, and I'll gladly address it.
