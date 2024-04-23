@@ -1,5 +1,5 @@
 # clerk-shadcn-theme
-Easily synchronize your Clerk Sign-in and Sign-up components with your Shadcn styles using the provided CSS styles.
+Easily synchronize your Clerk components with your Shadcn styles using the provided CSS styles.
 
 ![Screenshot_4](https://github.com/stormynight9/clerk-shadcn-theme/assets/81434423/65804b03-cf66-43e0-ab19-9158c6ecf003)
 
