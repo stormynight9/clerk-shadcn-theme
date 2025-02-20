@@ -246,6 +246,14 @@ h1[data-localization-key='userProfile.navbar.title'] {
     @apply rounded-lg border-input bg-background;
 }
 
+.cl-navbarMobileMenuRow {
+    @apply rounded-lg border-x border-t bg-gradient-to-t from-background to-background;
+}
+
+.cl-navbarMobileMenuButton {
+    @apply text-foreground;
+}
+
 ```
 
 # Clerk Core 1
