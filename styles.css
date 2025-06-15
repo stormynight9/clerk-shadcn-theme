@@ -5,11 +5,11 @@
 }
 
 .cl-formButtonPrimary {
-  @apply inline-flex h-9 items-center justify-center whitespace-nowrap rounded-md bg-primary px-3  font-medium text-primary-foreground !shadow-none ring-offset-background transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+  @apply inline-flex h-9 items-center justify-center whitespace-nowrap rounded-md bg-primary px-3 font-medium text-primary-foreground !shadow-none ring-offset-background transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
 }
 
 .cl-formButtonPrimary {
-  @apply inline-flex h-9 items-center justify-center whitespace-nowrap rounded-md bg-primary px-3  font-medium text-primary-foreground !shadow-none ring-offset-background transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+  @apply inline-flex h-9 items-center justify-center whitespace-nowrap rounded-md bg-primary px-3 font-medium text-primary-foreground !shadow-none ring-offset-background transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
 }
 
 .cl-card,
@@ -55,6 +55,7 @@
 .cl-formFieldSuccessText,
 .cl-identityPreviewText,
 .cl-userButtonPopoverActionButton,
+.cl-userButtonPopoverCustomItemButton,
 .cl-userButtonPopoverActionButton svg,
 .cl-userButtonPopoverActionButtonText,
 .cl-organizationSwitcherPopoverActionButton,
@@ -67,8 +68,7 @@
 .cl-breadcrumbsItemDivider,
 .cl-fileDropAreaHint,
 .cl-fileDropAreaFooterHint,
-.cl-form
-  p[data-localization-key="userProfile.emailAddressPage.emailCode.formHint"],
+.cl-form p[data-localization-key="userProfile.emailAddressPage.emailCode.formHint"],
 p[data-localization-key="userProfile.profilePage.successMessage"] {
   @apply text-muted-foreground;
 }
@@ -109,7 +109,7 @@ p[data-localization-key="userProfile.profilePage.successMessage"] {
 }
 
 button[data-localization-key="userProfile.start.dangerSection.deleteAccountButton"] {
-  @apply bg-destructive text-white  hover:text-white hover:bg-destructive;
+  @apply bg-destructive text-white hover:text-white hover:bg-destructive;
 }
 
 .cl-fileDropAreaBox {
@@ -130,6 +130,7 @@ button[data-localization-key="userProfile.start.dangerSection.deleteAccountButto
 
 .cl-userButtonPopoverActionButton,
 .cl-organizationSwitcherPopoverActionButton,
+.cl-userButtonPopoverCustomItemButton,
 .cl-profileSectionPrimaryButton,
 .cl-accordionTriggerButton,
 .cl-navbarButton {
@@ -165,8 +166,9 @@ button[data-localization-key="userProfile.start.dangerSection.deleteAccountButto
 }
 
 .cl-footer {
-  @apply rounded-b-lg border-x border-b bg-background bg-gradient-to-t from-background to-background  text-muted-foreground;
+  @apply rounded-b-lg border-x border-b bg-background bg-gradient-to-t from-background to-background text-muted-foreground;
 }
+
 .cl-userButtonPopoverFooter,
 .cl-organizationSwitcherPopoverFooter {
   @apply rounded-b-lg bg-gradient-to-t from-background to-background;
@@ -208,7 +210,7 @@ h1[data-localization-key="userProfile.navbar.title"] {
   @apply text-foreground;
 }
 
-.cl-profilePage > .cl-header {
+.cl-profilePage>.cl-header {
   @apply border-b;
 }
 
@@ -244,4 +246,31 @@ h1[data-localization-key="userProfile.navbar.title"] {
 
 .cl-selectButton {
   @apply !border !border-input;
+}
+
+.cl-userButtonPopoverFooter,
+.cl-navbar > :last-child {
+  @apply hidden;
+}
+
+.cl-userButtonPopoverMain {
+  @apply pb-4;
+}
+
+.cl-profileSectionItem > :first-child > div > div > span,
+[data-localization-key="userProfile.navbar.description"] {
+  @apply text-muted-foreground;
+}
+
+.cl-userButtonPopoverActionItemButtonIcon,
+.cl-navbarButtonIcon {
+  @apply inline-flex items-center justify-center;
+}
+
+.cl-socialButtons .cl-button {
+  @apply bg-secondary text-secondary-foreground hover:bg-secondary/80 border shadow-xs;
+}
+
+.dark .cl-socialButtonsIconButton__apple img {
+  @apply invert;
 }
